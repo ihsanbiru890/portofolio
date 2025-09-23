@@ -56,7 +56,12 @@ sentinel.style.height = "1px";
 sentinel.style.pointerEvents = "none";
 document.body.appendChild(sentinel);
 
-const toggleBtn = document.getElementById("toggleMode");
-toggleBtn.addEventListener("click", () => {
+const toggleBtn1 = document.getElementById("toggleMode1");
+toggleBtn1.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark-mode");
+});
+
+const toggleBtn2 = document.getElementById("toggleMode2");
+toggleBtn2.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark-mode");
 });
