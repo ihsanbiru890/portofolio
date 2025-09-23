@@ -24,6 +24,10 @@
     --gradient-to: #415A77;
 }
 
+.font-[Cinzel] {
+    font-family: 'Cinzel', serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
