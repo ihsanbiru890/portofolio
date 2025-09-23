@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #1D1616;
+    --secondary-color: #8E1616;
+    --tertiary-color: #D84040;
+    --accent-color: #EEEEEE;
+    --bg-color: #481E14;
+    
+    /* button contact */
+    --gradient-from: #ec4899;
+    --gradient-via: #ef4444;
+    --gradient-to: #f59e0b;
+}
+
+:root.dark-mode {
+    --primary-color: #0D1B2A;
+    --secondary-color: #1B263B;
+    --tertiary-color: #415A77;
+    --accent-color: #E0E1DD;
+    --bg-color: #0B132B;
+
+    /* button dark contact */
+    --gradient-from: #0D1B2A;
+    --gradient-via: #1B263B;
+    --gradient-to: #415A77;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.rgb-glitch {
+    animation: rgbGlitch 10s infinite;
+}
+
+@keyframes rgbGlitch {
+    0% {
+        filter: none;
+        transform: translate(0, 0);
+    }
+
+    20% {
+        filter: drop-shadow(-2px 0 red) drop-shadow(2px 0 cyan);
+    }
+
+    40% {
+        filter: drop-shadow(-4px 0 red) drop-shadow(4px 0 cyan);
+        transform: skew(3deg);
+    }
+
+    60% {
+        filter: drop-shadow(-1px 0 red) drop-shadow(1px 0 cyan);
+        transform: skew(-3deg);
+    }
+
+    80% {
+        filter: none;
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        filter: none;
+        transform: translate(0, 0);
+    }
+}
+
+#slideshow {
+    transition: opacity 0.6s ease-in-out;
+}
+

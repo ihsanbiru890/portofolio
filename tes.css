@@ -1,0 +1,23 @@
+.door {
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+/* Pintu kiri */
+.left-door {
+    transform-origin: left;
+}
+
+.left-door:hover {
+    transform: rotateY(-90deg);
+}
+
+/* Pintu kanan */
+.right-door {
+    transform-origin: right;
+}
+
+.right-door:hover {
+    transform: rotateY(90deg);
+}
