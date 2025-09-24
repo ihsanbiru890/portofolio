@@ -1,0 +1,72 @@
+🗄️ Struktur Database (MySQL)
+Tabel utama:
+
+1. users (pakai bawaan Django Auth).
+
+2.backgrounds
+
+    id
+
+    title (misal “Informatics Student”)
+
+    institution (misal Universitas X)
+
+    start_year, end_year
+
+    description (teks detail)
+
+3. skills
+
+    id
+
+    name (misal Python, Django)
+
+    category (Programming, Database, Tools)
+
+    level (Beginner, Intermediate, Advanced)
+
+    description
+
+4. projects
+
+    id
+
+    title
+
+    description
+
+    tech_stack
+
+    repo_url
+
+    demo_url
+
+    created_at
+
+    images (opsional, bisa pakai relation table project_images)
+
+5. certificates
+
+    id
+
+    title
+
+    issuer
+
+    year
+
+    certificate_url (link PDF/jpg)
+
+    image (thumbnail sertifikat)
+
+6. contacts
+
+    id
+
+    name
+
+    email
+
+    message
+
+    created_at

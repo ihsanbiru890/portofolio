@@ -1,0 +1,26 @@
+backend/
+│── manage.py
+│── requirements.txt
+│
+│── config/                      # pengaturan utama project
+│   ├── __init__.py
+│   ├── settings.py              # konfigurasi DB, REST, corsheaders
+│   ├── urls.py                  # global URL routes
+│   ├── wsgi.py
+│   └── asgi.py
+│
+│── portfolio/                   # app utama untuk portofolio
+│   ├── __init__.py
+│   ├── admin.py                 # register model
+│   ├── apps.py
+│   ├── models.py                 # Background, Skill, Project, Certificate, Contact
+│   ├── serializers.py            # JSON serializer
+│   ├── views.py                  # logic API (CRUD)
+│   ├── urls.py                   # route API untuk app ini
+│   └── tests.py
+│
+│── users/                       # optional app untuk auth/user profile
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   └── urls.py

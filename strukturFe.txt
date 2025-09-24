@@ -1,0 +1,39 @@
+frontend/
+│── public/                      # asset statis (favicon, robots.txt, dll)
+│── src/
+│   ├── assets/                  # gambar/icon
+│   ├── components/              # komponen reusable
+│   │   ├── layout/              # Navbar, Footer, Sidebar
+│   │   ├── ui/                  # Button, Card, Modal, Loader
+│   │   └── charts/              # optional (progress bar, pie chart skill)
+│   │
+│   ├── pages/                   # halaman utama
+│   │   ├── HomePage.jsx
+│   │   ├── BackgroundPage.jsx
+│   │   ├── SkillsPage.jsx
+│   │   ├── ProjectsPage.jsx
+│   │   ├── CertificatesPage.jsx
+│   │   ├── ContactPage.jsx
+│   │   └── NotFoundPage.jsx
+│   │
+│   ├── pages/detail/            # detail page
+│   │   ├── BackgroundDetail.jsx
+│   │   ├── SkillDetail.jsx
+│   │   ├── ProjectDetail.jsx
+│   │   └── CertificateDetail.jsx
+│   │
+│   ├── services/                # API services (axios/fetch)
+│   │   ├── api.js               # baseURL Django
+│   │   ├── backgroundService.js
+│   │   ├── skillService.js
+│   │   ├── projectService.js
+│   │   ├── certificateService.js
+│   │   └── contactService.js
+│   │
+│   ├── context/                 # global state (auth, theme)
+│   ├── hooks/                   # custom hooks (useFetch, useForm)
+│   ├── App.jsx
+│   └── main.jsx
+│
+│── vite.config.js
+│── package.json
